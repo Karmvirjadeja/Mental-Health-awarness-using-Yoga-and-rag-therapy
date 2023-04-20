@@ -1,0 +1,61 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="javascript">
+function recommendRaag(mood) {
+  function recommendRaag(mood) {
+  var currentTime = new Date().getHours();
+  var recommendedRaag = '';
+
+  if (mood === 'happy') {
+    if (currentTime >= 6 && currentTime < 9) {
+      recommendedRaag = 'Raag Bhairav';
+    } else if (currentTime >= 9 && currentTime < 12) {
+      recommendedRaag = 'Raag Desh';
+    } else if (currentTime >= 12 && currentTime < 18) {
+      recommendedRaag = 'Raag Pahadi';
+    } else if (currentTime >= 18 && currentTime < 21) {
+      recommendedRaag = 'Raag Bhimpalasi';
+    } else {
+      recommendedRaag = 'Raag Yaman';
+    }
+  } else if (mood === 'sad') {
+    if (currentTime >= 6 && currentTime < 9) {
+      recommendedRaag = 'Raag Marwa';
+    } else if (currentTime >= 9 && currentTime < 12) {
+      recommendedRaag = 'Raag Bhimpalasi';
+    } else if (currentTime >= 12 && currentTime < 18) {
+      recommendedRaag = 'Raag Bageshri';
+    } else if (currentTime >= 18 && currentTime < 21) {
+      recommendedRaag = 'Raag Shree';
+    } else {
+      recommendedRaag = 'Raag Darbari';
+    }
+  } else if (mood === 'calm') {
+    if (currentTime >= 6 && currentTime < 9) {
+      recommendedRaag = 'Raag Bhairav';
+    } else if (currentTime >= 9 && currentTime < 12) {
+      recommendedRaag = 'Raag Ahir Bhairav';
+    } else if (currentTime >= 12 && currentTime < 18) {
+      recommendedRaag = 'Raag Bhimpalasi';
+    } else if (currentTime >= 18 && currentTime < 21) {
+      recommendedRaag = 'Raag Yaman';
+    } else {
+      recommendedRaag = 'Raag Darbari';
+    }
+  }
+
+  return recommendedRaag;
+}
+
+// Example usage:
+var recommendedRaag = recommendRaag('happy');
+console.log('Recommended Raag:', recommendedRaag);
+}
+
+  </body>
+</html>

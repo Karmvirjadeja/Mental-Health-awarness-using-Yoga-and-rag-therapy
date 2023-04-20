@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Mental Health Awareness Organization (MHA Org) helps spread awareness and shed light to different mental health problems, the various ways to cope with them, how to help others who might be struggling, and how to spread awareness yourself.">
+    <meta name="keywords" content="Mental, Health, Awareness, Help, Depression, Anxiety, PTSD">
+    <meta name="author" content="Madyar Kozhakhmetov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome link below -->
+    <script src="https://use.fontawesome.com/5d5a7b196b.js"></script>
+    <!-- Google Fonts link below -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap link below -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- CSS link below -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon link below -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <title>MHA Sign Up</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <div id="covid-19-awareness">
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" class="mha-link" aria-label="Link to the WHO COVID-19 Home page">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>COVID-19 resources<i class="fa fa-angle-right"></i></a>
+            </div>
+        </aside>
+        <nav class="navbar navbar-expand-lg my-0 navbar-light" id="custom-nav-css"> <!-- navbar uses bootstrap code seen as seen in https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <div class="container-fluid"> 
+            <a class="navbar-brand" id="custom-navbar-brand-mobile-responsiveness" href="index.html">
+                <img src="assets/images/hugging.png" class="d-inline-block align-top" alt="Mental Health Awareness Organization logo" loading="lazy">
+                MHA Organization
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="nav navbar-nav mx-auto">
+                    <li><a class="nav-link mha-nav" href="educate-yourself.html">Educate Yourself</a></li>
+                    <li><a class="nav-link mha-nav" href="help-yourself.html">Help Yourself</a></li>
+                    <li><a class="nav-link mha-nav" href="help-others.html">Help Others</a></li>
+                    <li><a class="nav-link mha-nav" href="spread-the-word.html">Spread the Word</a></li> 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-link mha-nav active mha-active" href="sign-in.html">Sign In <span id="mha-navbar-right-space"> | </span> Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <section class="sign-up-page">
+    <div class="sign-up">
+        <div class="sign-up-logo"><img src="assets/images/hugging.png" alt="Mental Health Awareness organization logo." loading="lazy"></div>
+        <div class="sign-up-form">
+            <form action="https://formdump.codeinstitute.net/" target="_blank" method="post" autocomplete="on">
+                <label for="fname">First name</label> <!-- all labels will be hidden but are used screen readers and speech input users -->
+                <input type="text" id="fname" name="fname" required placeholder="First Name" aria-label="First name input">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" required placeholder="Last Name" aria-label="Last name input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Email Address" aria-label="Email input">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" required placeholder="Password" aria-label="Password input">
+                <label for="pass-confirm">Confirm password</label>
+                <input type="password" id="pass-confirm" name="pass-confirm" required placeholder="Confirm Password" aria-label="Confirm password input">
+                <input type="submit" value="Sign Up" aria-label="Sign Up button">
+            </form>
+        </div>
+        <div class="sign-up-tos">By creating an account you are agreeing to our <span>Terms of Service</span> and <span>Privacy Notice</span>.</div>
+        <div class="sign-up-redirect">Already have an account? <a href="sign-in.html" aria-label="Link to the 'Sign In' page">Sign In<i class="fa fa-angle-right"></i></a></div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="black-background"></div>
+        <div class="top-footer">
+            <div class="top-left">
+                <img src="assets/images/us-flag.png" id="flag" alt="Flag of the United States of America." loading="lazy">
+                English
+            </div>
+            <div class="top-right">
+                <a href="https://twitter.com/" target="_blank" aria-label="Link to the Twitter home page"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Link to the Facebook home page"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Link to the Instagram home page"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-left">
+                © 2020 Mental Health Awareness Organization
+            </div>
+            <div class="bottom-right">
+                <span>Privacy Notice</span><br>
+                <span>Terms of Service</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
